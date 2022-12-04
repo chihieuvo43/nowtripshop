@@ -1,0 +1,58 @@
+.pagination {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.pagination li {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--color-1);
+    margin: 0px 5px 0px 5px;
+}
+
+.pagination li a {
+    width: 32px;
+    height: 32px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.pagination li svg {
+    width: 12px;
+    height: 10px;
+    fill: var(--color-1);
+}
+
+.pagination-active {
+    background-color: var(--color-1);
+}
+
+.pagination-active a {
+    color: #fff !important;
+}
+
+.pagination .m-dis {
+    display: none;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .pagination .m-dis {
+        display: block;
+    }
+}
+
+/* Deskop */
+@media screen and (min-width: 992px) {}
+
+/*Extra large*/
+@media screen and (min-width: 1200px) {}

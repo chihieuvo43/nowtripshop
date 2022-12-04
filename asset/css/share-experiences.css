@@ -1,0 +1,77 @@
+.share-experiences {
+    width: 100%;
+    position: relative;
+}
+
+.share-experiences li {
+    width: 100%;
+    height: auto;
+    /* max-height: 258px; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--sDis);
+    background-color: aqua;
+}
+
+.share-experiences li img {
+    background-color: blue;
+    /* width: auto; */
+    height: 100%;
+}
+
+.share-experiences span {
+    width: calc(100%);
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    /* top: var(--lDis); */
+}
+
+.share-experiences button {
+    width: 171px;
+    height: 32px;
+    background-color: var(--color-1);
+    position: absolute;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    bottom: var(--sDis);
+}
+
+.share-experiences button svg {
+    width: 10px;
+    height: 10px;
+    fill: #fff;
+    margin-left: 10px;
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .share-experiences {
+        display: grid;
+        justify-items: stretch;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+}
+
+/* Deskop */
+@media screen and (min-width: 992px) {
+    .share-experiences {
+        display: grid;
+        justify-items: stretch;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+}
+
+/*Extra large*/
+@media screen and (min-width: 1200px) {}

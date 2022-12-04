@@ -1,0 +1,69 @@
+.brand {
+    width: 100%;
+    padding-bottom: 0px !important;
+}
+
+.brand ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.brand ul li {
+    border: 1px solid var(--color-3);
+    width: 150px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.brand ul li img {
+    width: 140px;
+    height: 50px;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    .brand {
+        padding: 20px 0px 0px 0px;
+        max-width: 490px;
+        /* background-color: aqua; */
+        display: grid;
+        margin: auto;
+
+    }
+
+    .brand ul {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: antiquewhite; */
+    }
+}
+
+/* Deskop */
+@media screen and (min-width: 992px) {
+    .brand {
+        padding: 20px 0px 0px 0px;
+        max-width: 1000px;
+        /* background-color: aqua; */
+        display: grid;
+        margin: auto;
+
+    }
+
+    .brand ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* background-color: antiquewhite; */
+    }
+}
+
+/*Extra large*/
+@media screen and (min-width: 1200px) {}
